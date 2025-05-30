@@ -1,6 +1,7 @@
 # %%
 
-#dimension reduction using PCA expt-1
+
+#**dimension reduction using PCA expt-1**
 
 import numpy as np
 import pandas as pd
@@ -37,6 +38,13 @@ print("Explained variance ratio:", pca.explained_variance_ratio_)
 print("Total variance explained:", np.sum(pca.explained_variance_ratio_))
 
 
+
+
+
+
+
+
+
 # %%
 #KNN Classification expt-2
 from sklearn.datasets import load_iris
@@ -62,6 +70,13 @@ accuracy=np.mean(y_pred==y_test)
 print("Accuracy:", knn.score(X_test, y_test))
 for actual, pred in zip(y_test, y_pred):
     print(f"Actual: {actual} ({iris.target_names[actual]}), Predicted: {pred} ({iris.target_names[pred]})")
+
+
+
+
+
+
+
 
 
 # %%
@@ -91,6 +106,13 @@ plt.xlabel('Housing Median Age')
 plt.ylabel('Median House Value')
 plt.legend()
 plt.show()
+
+
+
+
+
+
+
 
 
 # %%
@@ -134,6 +156,14 @@ print(f"Predicted pressure at {temp[0][0]}°C: {pred[0]:.4f}")
 print(f"Manual calculation: {manual_pred[0][0]:.4f}")
 
 
+
+
+
+
+
+
+
+
 # %%
 #polynomial regression expt-5
 import numpy as np
@@ -165,6 +195,15 @@ plt.grid()
 plt.show()
 
 
+
+
+
+
+
+
+
+
+
 # %%
 #classification using ID3 dataset expt-6
 import pandas as pd
@@ -188,6 +227,13 @@ print("The predicted labels are: ", prediction)
 
 accuracy = (prediction == test_labels).sum() / len(test_labels) 
 print("The accuracy of the model is: ", round(accuracy*100,2), "%") 
+
+
+
+
+
+
+
 
 
 # %%
@@ -236,6 +282,7 @@ plt.tight_layout(); plt.show()
 
 
 # %%
+
 
 
 
